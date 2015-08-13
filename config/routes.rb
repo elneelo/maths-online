@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'timetable/index'
+
   get 'sessions/new'
 
   root             'static_pages#home'
@@ -9,7 +11,8 @@ Rails.application.routes.draw do
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
-  get 'timetable' => 'time_table_page#timetable'
+  get 'index' => 'timetable#index'
   resources :users
+  resources :timetable
 
 end
