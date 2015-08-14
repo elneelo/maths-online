@@ -1,0 +1,12 @@
+<% provide(:title, 'All Lessons') %>
+<h1>All Lessons</h1>
+
+<%= will_paginate %>
+
+<ul class="lessons">
+	<% if current_user.admin? %>
+  	<%= render @lessons %>
+  <% end %>
+</ul>
+
+<%= will_paginate %>

@@ -1,0 +1,7 @@
+<li>
+  <%= link_to lesson.title, lesson %>
+  <% if current_user.admin? %>
+    | <%= link_to "delete", lesson, method: :delete,
+                                  data: { confirm: "You sure?" } %>
+  <% end %>
+</li>

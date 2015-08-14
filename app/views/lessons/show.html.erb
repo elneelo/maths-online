@@ -1,0 +1,13 @@
+<% provide(:title, 'Lesson Information') %>
+<h1><%=@lesson.title%> Information</h1>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="lesson_info">
+      <p>Name: <%= @lesson.title %>
+      <% if (logged_in? && current_user.admin?) %>
+      	| <%= link_to "Edit Lesson", edit_lesson_path() %>
+      <% end %>
+      </p>
+    </section>
+  </aside>
+</div>

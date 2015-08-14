@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  begin: 2015-08-14 09:50:09
+  finish: 2015-08-14 09:50:09
+  price: 1
+
+two:
+  title: MyString
+  begin: 2015-08-14 09:50:09
+  finish: 2015-08-14 09:50:09
+  price: 1
