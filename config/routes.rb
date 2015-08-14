@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
-  get 'timetable/index'
+  get 'lessons/index'
+
+  get 'lessons/show'
+
+  get 'lessons/new'
+
+  get 'lessons/create'
+
+  get 'lessons/edit'
+
+  get 'lessons/update'
+
+  get 'lessons/destroy'
 
   get 'sessions/new'
 
@@ -11,8 +23,9 @@ Rails.application.routes.draw do
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
-  get 'index' => 'timetable#index'
+  get 'index' => 'lessons#index'
+
   resources :users
-  resources :timetable
+  resources :lessons
 
 end
