@@ -4,7 +4,7 @@
 <%= will_paginate %>
 
 <ul class="lessons">
-	<% if current_user.admin? %>
+	<% if logged_in? %>
   	<%= render @lessons %>
   <% end %>
 </ul>
