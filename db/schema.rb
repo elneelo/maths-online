@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20150814085009) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "lessons", force: :cascade do |t|
     t.string   "title"
     t.datetime "begin"
@@ -29,10 +32,10 @@ ActiveRecord::Schema.define(version: 20150814085009) do
     t.datetime "updated_at",                     null: false
     t.string   "password_digest"
     t.string   "remember_digest"
-    t.boolean  "admin",           default: false
+    t.boolean  "admin",           default: true
     t.string   "contact_number"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
 
 end
