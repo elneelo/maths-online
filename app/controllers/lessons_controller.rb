@@ -45,7 +45,8 @@ class LessonsController < ApplicationController
   private
 
     def lesson_params
-      params.require(:lesson).permit(:title)
+      params.require(:lesson).permit(:title, :price,
+        :start_time, :end_time)
     end
 
     # Before filters

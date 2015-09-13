@@ -1,0 +1,12 @@
+<% provide(:title, 'All Classrooms') %>
+<h1>All Classrooms</h1>
+
+<%= will_paginate %>
+
+<ul class="classrooms">
+	<% if logged_in? %>
+  	<%= render @classrooms %>
+  <% end %>
+</ul>
+
+<%= will_paginate %>

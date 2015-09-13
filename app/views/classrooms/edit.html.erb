@@ -1,0 +1,16 @@
+<% provide(:title, "Edit Lesson") %>
+<h1>Edit the current Classroom:</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@classroom) do |f| %>
+      <%= render 'shared/error_messages' %>
+
+      <%= f.label :classroom_name %>
+      <%= f.text_field :classroom_name, class: 'form-control' %>
+
+      <%= f.submit "Save changes", class: "btn btn-primary" %>
+    <% end %>
+    
+  </div>
+</div>

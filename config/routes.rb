@@ -1,17 +1,20 @@
 Rails.application.routes.draw do
+
+  get 'classrooms/index'
+  get 'classrooms/show'
+  get 'classrooms/new'
+  post 'classrooms/create'
+  post 'classrooms/edit'
+  post 'classrooms/update'
+  delete 'classrooms/destroy'
+
   get 'lessons/index'
-
   get 'lessons/show'
-
   get 'lessons/new'
-
-  get 'lessons/create'
-
-  get 'lessons/edit'
-
-  get 'lessons/update'
-
-  get 'lessons/destroy'
+  post 'lessons/create'
+  post 'lessons/edit'
+  post 'lessons/update'
+  delete 'lessons/destroy'
 
   get 'sessions/new'
 
@@ -24,8 +27,10 @@ Rails.application.routes.draw do
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
   get 'index' => 'lessons#index'
+  get 'index' => 'classrooms#index'
 
   resources :users
   resources :lessons
+  resources :classrooms
 
 end

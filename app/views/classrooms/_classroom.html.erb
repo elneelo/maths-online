@@ -1,0 +1,8 @@
+
+<li>
+  <%= link_to classroom.classroom_name, classroom %>
+  <% if current_user.admin? %>
+    | <%= link_to "delete", classroom, method: :delete,
+                                  data: { confirm: "You sure?" } %>
+  <% end %>
+</li>
