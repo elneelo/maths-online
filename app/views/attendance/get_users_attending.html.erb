@@ -1,0 +1,11 @@
+<% provide(:title, 'Users') %>
+<h1>Users Attending <%= @lesson.title %></h1>
+
+
+<ul class="users">
+	<%if logged_in? %>
+		<% @users.each_with_index do |user, index| %>
+    	<p><%= link_to "" << user.name,   user_attending_profile_path(id: user.id) %></p>
+    <% end %>
+	<% end %>
+</ul>

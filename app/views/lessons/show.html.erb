@@ -12,7 +12,7 @@
       <p>Start Time: <%= @lesson.start_time %></p>
       <p>End Time: <%= @lesson.end_time %></p>
       <P>
-        <%= link_to "Confirm Attendance", edit_classroom_path(user_id, lesson_id), class: "btn btn-lg btn-primary" %>
+        <%= link_to "Confirm Attendance", record_attendance_path(id: @lesson.id), class: "btn btn-lg btn-primary" %>
       </p>
     </section>
   </aside>

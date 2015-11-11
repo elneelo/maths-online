@@ -1,0 +1,11 @@
+<% provide(:title, 'All Lessons') %>
+<h1>All Lessons</h1>
+
+
+<ul class="lessons">
+	<%if logged_in? %>
+		<% @lessons.each_with_index do |lesson, index| %>
+    	<%= link_to "" << lesson.title, get_users_attending_path(lesson_id: lesson.id), class: "btn btn-lg btn-primary" %>
+    <% end %>
+	<% end %>
+</ul>
