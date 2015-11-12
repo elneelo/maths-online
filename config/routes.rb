@@ -24,7 +24,7 @@ Rails.application.routes.draw do
   get     'index' => 'lessons#index'
   get     'index' => 'classrooms#index'
 
-  get     'attendance/index'
+  get     'attendance_index' => 'attendance#index'
 
   get     'user_attending_profile', to: 'users#show'
 
