@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'password_resets/new'
+
+  get 'password_resets/edit'
+
   get    'record_attendance' , to: 'lessons#record_attendance'
   get    'get_users_attending', to: 'attendance#get_users_attending'
 
@@ -32,5 +36,6 @@ Rails.application.routes.draw do
   resources :lessons
   resources :attendance
   resources :account_activations, only: [:edit]
+  resources :password_resets,     only: [:new, :create, :edit, :update]
 
 end
