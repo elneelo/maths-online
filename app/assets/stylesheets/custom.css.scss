@@ -206,3 +206,14 @@ input {
   }
 }
 
+
+/* override default bootstrap button color */
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #00CFD4;
+    border-color: #00CFD4;
+}
+
