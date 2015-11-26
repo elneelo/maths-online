@@ -2,7 +2,9 @@ User.create!(name:  "Neil Murphy",
              email: "nbmre4w@gmail.com",
              password:              "foobar",
              password_confirmation: "foobar",
-             admin: true)
+             admin: true,
+             activated: true,
+             activated_at: Time.zone.now)
 
 =begin
 99.times do |n|

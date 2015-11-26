@@ -31,5 +31,6 @@ Rails.application.routes.draw do
   resources :users
   resources :lessons
   resources :attendance
+  resources :account_activations, only: [:edit]
 
 end
