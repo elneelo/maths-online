@@ -1,0 +1,14 @@
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/json-1.8.2/ext/json
+/usr/bin/ruby1.9.1 -r ./siteconf20151225-13713-e0x4n6.rb extconf.rb
+creating Makefile
+
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/json-1.8.2/ext/json
+make  clean
+
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/json-1.8.2/ext/json
+make
+make: Nothing to be done for `all'.
+
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/json-1.8.2/ext/json
+make  install
+installing default libraries

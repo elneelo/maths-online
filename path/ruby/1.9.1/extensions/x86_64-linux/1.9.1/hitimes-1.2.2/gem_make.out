@@ -1,0 +1,26 @@
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/hitimes-1.2.2/ext/hitimes/c
+/usr/bin/ruby1.9.1 -r ./siteconf20151225-13713-1w5h8hn.rb extconf.rb
+checking for clock_gettime() in -lrt... yes
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /home/elneelo/maths-online/path/ruby/1.9.1/extensions/x86_64-linux/1.9.1/hitimes-1.2.2/mkmf.log
+
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/hitimes-1.2.2/ext/hitimes/c
+make  clean
+
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/hitimes-1.2.2/ext/hitimes/c
+make
+compiling hitimes_stats.c
+compiling hitimes_instant_windows.c
+compiling hitimes_instant_osx.c
+compiling hitimes.c
+compiling hitimes_instant_clock_gettime.c
+compiling hitimes_interval.c
+linking shared-object hitimes/1.9/hitimes.so
+
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/hitimes-1.2.2/ext/hitimes/c
+make  install
+/usr/bin/install -c -m 0755 hitimes.so .gem.20151225-13713-1ijm4j2/hitimes/1.9
+installing default hitimes libraries

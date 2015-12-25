@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get     'sessions/new'
 
   root    'static_pages#home'
+  get     'assignments' => 'static_pages#assignments'
   get     'help'    => 'static_pages#help'
   get     'about'   => 'static_pages#about'
   get     'contact' => 'static_pages#contact'
@@ -32,10 +33,14 @@ Rails.application.routes.draw do
 
   get     'user_attending_profile', to: 'users#show'
 
+  get     'new_file', to: 'photos#new'
+  get     'files_index', to: 'photos#index'
+
   resources :users
   resources :lessons
   resources :attendance
   resources :account_activations, only: [:edit]
   resources :password_resets,     only: [:new, :create, :edit, :update]
+  resources :photos,              only: [:new, :create, :index, :destroy]
 
 end

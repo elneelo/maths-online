@@ -1,0 +1,20 @@
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/bcrypt-3.1.10/ext/mri
+/usr/bin/ruby1.9.1 -r ./siteconf20151225-13713-1tnelcc.rb extconf.rb
+creating Makefile
+
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/bcrypt-3.1.10/ext/mri
+make  clean
+
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/bcrypt-3.1.10/ext/mri
+make
+compiling crypt_gensalt.c
+compiling wrapper.c
+compiling crypt_blowfish.c
+compiling crypt.c
+compiling bcrypt_ext.c
+linking shared-object bcrypt_ext.so
+
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/bcrypt-3.1.10/ext/mri
+make  install
+/usr/bin/install -c -m 0755 bcrypt_ext.so .gem.20151225-13713-1ju1q8k
+installing default bcrypt_ext libraries

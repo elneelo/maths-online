@@ -1,0 +1,16 @@
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/debug_inspector-0.0.2/ext/debug_inspector
+/usr/bin/ruby1.9.1 -r ./siteconf20151225-13713-ocwtgt.rb extconf.rb
+
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/debug_inspector-0.0.2/ext/debug_inspector
+make  clean
+make: *** No rule to make target `clean'.  Stop.
+
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/debug_inspector-0.0.2/ext/debug_inspector
+make
+echo "Nada."
+Nada.
+
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/debug_inspector-0.0.2/ext/debug_inspector
+make  install
+echo "Nada."
+Nada.

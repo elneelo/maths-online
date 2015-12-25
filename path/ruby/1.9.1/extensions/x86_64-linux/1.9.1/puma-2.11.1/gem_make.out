@@ -1,0 +1,47 @@
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/puma-2.11.1/ext/puma_http11
+/usr/bin/ruby1.9.1 -r ./siteconf20151225-13713-1bbm8pk.rb extconf.rb
+checking for BIO_read() in -lcrypto... yes
+checking for SSL_CTX_new() in -lssl... yes
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /home/elneelo/maths-online/path/ruby/1.9.1/extensions/x86_64-linux/1.9.1/puma-2.11.1/mkmf.log
+
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/puma-2.11.1/ext/puma_http11
+make  clean
+
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/puma-2.11.1/ext/puma_http11
+make
+compiling mini_ssl.c
+In file included from mini_ssl.c:3:0:
+/usr/include/ruby-1.9.1/ruby/backward/rubyio.h:2:2: warning: #warning use "ruby/io.h" instead of "rubyio.h" [-Wcpp]
+ #warning use "ruby/io.h" instead of "rubyio.h"
+  ^
+mini_ssl.c: In function ‘engine_read’:
+mini_ssl.c:164:14: warning: unused variable ‘n’ [-Wunused-variable]
+   int bytes, n;
+              ^
+mini_ssl.c: In function ‘engine_write’:
+mini_ssl.c:187:8: warning: unused variable ‘buf’ [-Wunused-variable]
+   char buf[512];
+        ^
+compiling io_buffer.c
+io_buffer.c: In function ‘buf_to_str’:
+io_buffer.c:119:3: warning: pointer targets in passing argument 1 of ‘rb_str_new’ differ in signedness [-Wpointer-sign]
+   return rb_str_new(b->top, b->cur - b->top);
+   ^
+In file included from /usr/include/ruby-1.9.1/ruby/ruby.h:1383:0,
+                 from /usr/include/ruby-1.9.1/ruby.h:32,
+                 from io_buffer.c:2:
+/usr/include/ruby-1.9.1/ruby/intern.h:660:7: note: expected ‘const char *’ but argument is of type ‘uint8_t *’
+ VALUE rb_str_new(const char*, long);
+       ^
+compiling puma_http11.c
+compiling http11_parser.c
+linking shared-object puma/puma_http11.so
+
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/puma-2.11.1/ext/puma_http11
+make  install
+/usr/bin/install -c -m 0755 puma_http11.so .gem.20151225-13713-1s4j8k5/puma
+installing default puma_http11 libraries

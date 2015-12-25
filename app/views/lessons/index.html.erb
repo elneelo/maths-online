@@ -2,8 +2,7 @@
 <h1>All Lessons</h1>
 
 <% if current_user.admin? %>
-	<%= link_to "Create new lesson", new_lesson_path(), class: "btn btn-lg btn-primary" %>
-	<br>----------------------------------------</br>
+	<p><%= link_to "Create new lesson", new_lesson_path(), class: "btn btn-lg btn-primary" %></p>
 <% end %>
 
 <%= will_paginate %>

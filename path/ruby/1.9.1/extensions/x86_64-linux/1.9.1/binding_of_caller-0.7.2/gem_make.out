@@ -1,0 +1,25 @@
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/binding_of_caller-0.7.2/ext/binding_of_caller
+/usr/bin/ruby1.9.1 -r ./siteconf20151225-13713-fl2q5f.rb extconf.rb
+creating Makefile
+
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/binding_of_caller-0.7.2/ext/binding_of_caller
+make  clean
+
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/binding_of_caller-0.7.2/ext/binding_of_caller
+make
+compiling binding_of_caller.c
+binding_of_caller.c: In function ‘binding_free’:
+binding_of_caller.c:40:17: warning: variable ‘bind’ set but not used [-Wunused-but-set-variable]
+   rb_binding_t *bind;
+                 ^
+binding_of_caller.c: At top level:
+binding_of_caller.c:68:3: warning: missing braces around initializer [-Wmissing-braces]
+   binding_mark,
+   ^
+binding_of_caller.c:68:3: warning: (near initialization for ‘binding_data_type.function’) [-Wmissing-braces]
+linking shared-object binding_of_caller.so
+
+current directory: /home/elneelo/maths-online/path/ruby/1.9.1/gems/binding_of_caller-0.7.2/ext/binding_of_caller
+make  install
+/usr/bin/install -c -m 0755 binding_of_caller.so .gem.20151225-13713-a0ztjc
+installing default binding_of_caller libraries
