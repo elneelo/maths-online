@@ -50,16 +50,6 @@ ActiveRecord::Schema.define(version: 20151225165101) do
     t.datetime "image_updated_at"
   end
 
-  create_table "upfiles", force: :cascade do |t|
-    t.string   "title"
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
-    t.string   "thefile_file_name"
-    t.string   "thefile_content_type"
-    t.integer  "thefile_file_size"
-    t.datetime "thefile_updated_at"
-  end
-
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
