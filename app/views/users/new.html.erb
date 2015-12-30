@@ -6,22 +6,37 @@
     <%= form_for(@user) do |f| %>
       <%= render 'shared/error_messages' %>
 
-      <%= f.label :name %>
+      <%= f.label :name, "Name:" %>
       <%= f.text_field :name, class: 'form-control' %>
 
-      <%= f.label :email %>
+      <%= f.label :email, "Email Address:" %>
       <%= f.email_field :email, class: 'form-control' %>
 
-      <%= f.label :contact_number, "Contact Number" %>
+      <%= f.label :contact_number, "Contact Number:" %>
       <%= f.text_field :contact_number, class: 'form-control' %>
 
-      <%= f.label :password %>
+      <%= f.label :level_id, "Current Maths Level:" %>
+      <%= f.select :level_id, options_for_select([["Leaving Certificate Higher", 1],
+        ["Leaving Certificate Ordinary", 2],
+        ["5th Year Higher", 3],
+        ["3rd Year Higher", 4]]),
+        class: 'form-control' %>
+
+      <%= f.label :strand_id, "Preferred Strand To Cover:" %>
+      <%= f.select :strand_id, options_for_select([["Statistics & Probability", 1],
+        ["Geometry & Trigonometry", 2],
+        ["Number Theory", 3],
+        ["Algebra", 4],
+        ["Functions", 5]]),
+        class: 'form-control' %>
+
+      <%= f.label :password, "Password:" %>
       <%= f.password_field :password, class: 'form-control' %>
 
-      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.label :password_confirmation, "Password Confirmation - (Please re-enter your password)" %>
       <%= f.password_field :password_confirmation, class: 'form-control' %>
 
-      <%= f.submit "Create my account", class: "btn btn-primary" %>
+      <%= f.submit "Save changes", class: "btn btn-primary" %>
     <% end %>
   </div>
 </div>
