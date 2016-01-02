@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151230215143) do
+ActiveRecord::Schema.define(version: 20160102170956) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 20151230215143) do
     t.boolean  "full"
     t.string   "start_time"
     t.string   "end_time"
+    t.string   "date"
   end
 
   create_table "photos", force: :cascade do |t|
