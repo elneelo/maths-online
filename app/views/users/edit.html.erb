@@ -15,6 +15,9 @@
       <%= f.label :contact_number, "Contact Number:" %>
       <%= f.text_field :contact_number, class: 'form-control' %>
 
+      <%= f.label :area, "Please specify your area (Ballincollig, Blackrock, Douglas, etc.):" %>
+      <%= f.text_field :area, class: 'form-control' %>
+
       <%= f.label :level_id, "Current Maths Level:" %>
       <%= f.select :level_id, options_for_select([["Leaving Certificate Higher", 1],
         ["Leaving Certificate Ordinary", 2],
