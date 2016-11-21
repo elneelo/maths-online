@@ -4,9 +4,8 @@ development:
   pool: 5
   timeout: 5000
   port: 5432
-  username: postgres
-  password: password
-  host: localhost
+  username: elneelo
+  password: Snowpatrol
 
 test:
   adapter: postgresql
